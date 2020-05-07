@@ -1,3 +1,5 @@
 Carthage
 
 *.xcuserdatad
+
+.DS_Store
