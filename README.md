@@ -9,32 +9,10 @@ Control your external monitor brightness, contrast or volume directly from a men
 
 <!-- Language emoji -->
 <div align="center">
-    <p>Translations: :uk: :fr: :de: :it: :ru: 🇺🇦 </p>
+    <p>Translations: 🇨🇳 :uk: :fr: :de: :it: :ru: 🇺🇦 </p>
 </div>
 
-<br/>
-
-<!-- shields -->
-<div align="center">
-    <!-- downloads -->
-    <a href="https://github.com/the0neyouseek/MonitorControl/releases">
-        <img src="https://img.shields.io/github/downloads/the0neyouseek/MonitorControl/total.svg" alt="downloads"/>
-    </a>
-    <!-- version -->
-    <a href="https://github.com/the0neyouseek/MonitorControl/releases/latest">
-        <img src="https://img.shields.io/github/release/the0neyouseek/MonitorControl.svg" alt="latest version"/>
-    </a>
-    <!-- license -->
-    <a href="https://github.com/the0neyouseek/MonitorControl/blob/master/License.txt">
-        <img src="https://img.shields.io/github/license/the0neyouseek/MonitorControl.svg" alt="license"/>
-    </a>
-    <!-- platform -->
-    <a href="https://github.com/the0neyouseek/MonitorControl">
-        <img src="https://img.shields.io/badge/platform-macOS-lightgrey.svg" alt="platform"/>
-    </a>
-</div>
-
-<br/>
+<br/><br/>
 
 <div align="center">
     <img src="./.github/menulet.png"  alt="menulet screenshot"/>
