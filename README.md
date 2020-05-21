@@ -48,7 +48,7 @@ This repo was forked from the [original](https://github.com/the0neyouseek/Monito
 
 Clone the project
 ```sh
-$ git clone https://github.com/the0neyouseek/MonitorControl.git
+$ git clone https://github.com/monoKeith/MonitorControl.git
 ```
 Then download the dependencies with Carthage
 ```sh
