@@ -30,19 +30,12 @@ Control your external monitor brightness, contrast or volume directly from a men
 
 ## Download
 
-Go to [Release](https://github.com/the0neyouseek/MonitorControl/releases/latest) and download the latest `.dmg`
+Go to [Release](https://github.com/monoKeith/MonitorControl/releases) and download the latest `.zip`
 
-## Installing with Homebrew Cask
-
-You can also install MonitorControl with [Homebrew Cask](https://github.com/Homebrew/homebrew-cask).
-
-```bash
-$ brew cask install monitorcontrol
-```
 
 ## How to help
 
-Open [issues](https://github.com/the0neyouseek/MonitorControl/issues) if you have a question, an enhancement to suggest or a bug you've found. If you want you can fork the code yourself and submit a pull request to improve the app.
+This repo was forked from the [original](https://github.com/the0neyouseek/MonitorControl) repo, open [issues](https://github.com/the0neyouseek/MonitorControl/issues) if you have a question, an enhancement to suggest or a bug you've found. If you want you can fork the code yourself and submit a pull request to improve the app.
 
 ## How to build
 
@@ -72,15 +65,13 @@ You're all set ! Now open the `MonitorControl.xcodeproj` with Xcode
 - [AMCoreAudio](https://github.com/rnine/AMCoreAudio)
 
 ## Support
-- macOS Sierra (`10.12`) and up.
+- macOS Catalina (`10.15`) and up.
 - Works with monitors controllable via [DDC](https://en.wikipedia.org/wiki/Display_Data_Channel).
 
-## Contributors
+## Contributors & Thanks
 - [@the0neyouseek](https://github.com/the0neyouseek)
 - [@reitermarkus](https://github.com/reitermarkus)
 - [@JoniVR](https://github.com/JoniVR)
-
-## Thanks
 - [@bluejamesbond](https://github.com/bluejamesbond/) (Original developer)
 - [@Tyilo](https://github.com/Tyilo/) (Fork)
 - [@Bensge](https://github.com/Bensge/) - (Used some code from his project [NativeDisplayBrightness](https://github.com/Bensge/NativeDisplayBrightness))
