@@ -146,7 +146,7 @@ class Utils: NSObject {
 
     /// Show contrast slider
     case showContrast
-    
+
     /// Show volume slider
     case showVolume
 

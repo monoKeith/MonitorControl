@@ -32,7 +32,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     self.setupViewControllers()
     self.subscribeEventListeners()
     self.updateMediaKeyTap()
-    self.statusItem.image = NSImage(named: "status")
+    self.statusItem.button?.image = NSImage(named: "status")
     self.statusItem.menu = self.statusMenu
     self.setDefaultPrefs()
     Utils.acquirePrivileges()
@@ -118,7 +118,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let monitorSubMenu: NSMenu = asSubMenu ? NSMenu() : self.statusMenu
 
     self.statusMenu.insertItem(NSMenuItem.separator(), at: 0)
-    
+
     if prefs.bool(forKey: Utils.PrefKeys.showVolume.rawValue) {
       let volumeSliderHandler = Utils.addSliderMenuItem(toMenu: monitorSubMenu,
                                                         forDisplay: display,
@@ -126,7 +126,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                                                         title: NSLocalizedString("Volume", comment: "Shown in menu"))
       display.volumeSliderHandler = volumeSliderHandler
     }
-    
+
     if prefs.bool(forKey: Utils.PrefKeys.showContrast.rawValue) {
       let contrastSliderHandler = Utils.addSliderMenuItem(toMenu: monitorSubMenu,
                                                           forDisplay: display,
@@ -134,12 +134,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                                                           title: NSLocalizedString("Contrast", comment: "Shown in menu"))
       display.contrastSliderHandler = contrastSliderHandler
     }
-    
+
     let brightnessSliderHandler = Utils.addSliderMenuItem(toMenu: monitorSubMenu,
                                                           forDisplay: display,
                                                           command: .brightness,
                                                           title: NSLocalizedString("Brightness", comment: "Shown in menu"))
-    
+
     display.brightnessSliderHandler = brightnessSliderHandler
 
     let monitorMenuItem = NSMenuItem()
@@ -271,7 +271,7 @@ extension AppDelegate: MediaKeyTapDelegate {
   @objc func handleShowContrastChanged() {
     self.updateDisplays()
   }
-  
+
   @objc func handleShowVolumeChanged() {
     self.updateDisplays()
   }

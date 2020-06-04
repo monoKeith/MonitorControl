@@ -55,8 +55,8 @@ class MainPrefsViewController: NSViewController, MASPreferencesViewController {
 
     NotificationCenter.default.post(name: Notification.Name(Utils.PrefKeys.showContrast.rawValue), object: nil)
   }
-  
-  @IBAction func showVolumeSliderClicked(_ sender: NSButton){
+
+  @IBAction func showVolumeSliderClicked(_ sender: NSButton) {
     switch sender.state {
     case .on:
       self.prefs.set(true, forKey: Utils.PrefKeys.showVolume.rawValue)
@@ -64,11 +64,11 @@ class MainPrefsViewController: NSViewController, MASPreferencesViewController {
       self.prefs.set(false, forKey: Utils.PrefKeys.showVolume.rawValue)
     default: break
     }
-    
+
     #if DEBUG
-       os_log("Toggle show volume slider state: %{public}@", type: .info, sender.state == .on ? "on" : "off")
+      os_log("Toggle show volume slider state: %{public}@", type: .info, sender.state == .on ? "on" : "off")
     #endif
-    
+
     NotificationCenter.default.post(name: Notification.Name(Utils.PrefKeys.showVolume.rawValue), object: nil)
   }
 
